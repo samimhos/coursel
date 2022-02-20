@@ -1,0 +1,87 @@
+.carousel-indicators [data-bs-target] {
+	box-sizing: content-box;
+	flex: 0 1 auto;
+	width: 200px !important;
+	height: 150px !important;
+	padding: 0;
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	text-indent: 0 !important;
+	cursor: pointer;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 0 !important;
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+	opacity: 1 !important;
+	transition: opacity .6s ease;
+}
+a{
+    text-decoration: none !important;
+}
+.loan{
+    text-align: center;
+}
+.loan span {
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	background: #fff;
+	box-shadow: 2px 2px 10px #ddd;
+	line-height: 60px;
+	border-radius: 50%;
+	color: #555252;
+	font-size: 26px;
+}
+.loan h3 {
+	color: #000;
+	font-weight: 700;
+	font-size: 23px;
+	margin-top: 10px;
+}
+.carousel-indicators {
+	position: absolute;
+	right: 0;
+	top: -182px !important;
+	left: 0;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin-right: 0 !important;
+	margin-bottom: 1rem;
+	margin-left: 0 !important;
+	list-style: none;
+}
+.carousel-indicators::after {
+	content: "";
+	position: absolute;
+	top: 130px;
+	left: 0;
+	width: 89%;
+	height: 2px;
+	background: rgb(113, 116, 113);
+	right: 0;
+	margin: auto;
+}
+.carousel-indicators .active{
+    position: relative;
+}
+.carousel-indicators .active::after{
+    content: "";
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    z-index: 999;
+    
+}
+.carousel-indicators .active .loan span{
+    color: red;
+}
+.carousel {
+	position: relative;
+	top: 200px !important;
+}
